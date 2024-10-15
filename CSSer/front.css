@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(255, 244, 244);
+  }
+  .grid-container {
+    display: grid;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+  }
+  
+  .title {
+    justify-self: end; 
+    grid-column: 2 / span 1;
+    grid-row: 1;
+  }
+  .titler {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  
+  .meny {
+    grid-column: 1/ span 3;
+    grid-row: 2 / span 1;
+  }
+  .bilder {
+    grid-column: 2/ span 1;
+    grid-row: 3 / span 1;
+  }
+  .myButton {
+    transition: all 0.2s ease ;  
+    background: #91c8d5;
+    border: none;
+    padding: 1px 1px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .myButton:hover {
+    filter: brightness(90%);
+    transition: filter 0.2s ease ;
+  }
+  .myButton2 { 
+    transition: all 0.2s ease ; 
+    filter: brightness(100%);
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    width: auto;
+    height: 55px;
+    border-radius: 25px;
+    font-size: auto;
+    cursor: pointer;
+    text-align: auto;
+    border: 5px solid #2196F3;
+}
+
+.myButton2:hover {
+    filter: brightness(95%);
+    border: 5px solid #91c8d5;
+    transition: all 0.2s ease ; 
+}
+.myButton3 {
+  transition: all 0.2s ease ; 
+  font-size: 21px; 
+  border-radius: 25px;
+  background: #343434;
+  width: 450px;
+  height: 70px;
+  display: inline-block;
+  place-items: center; 
+}
+
+.myButton3:hover {
+  transition: all 0.2s ease ; 
+  background: #5f5f5f;
+}
+
+
+.myButton4{
+  transition: all 0.2s ease ; 
+  font-size: 21px; 
+  border-radius: 15px;
+  background: #000000;
+  width: 45px;
+  height: 45px;
+}
