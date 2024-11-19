@@ -1,57 +1,47 @@
 <!doctype html>
 <html lang="no">
-    <head>
-        <link rel="stylesheet" href="../CSSer/kjopeside.css">
-        <link rel="stylesheet" href="../CSSer/front.css">
-        <title>Kamba kjoler</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamba kjoler</title>
+    <link rel="stylesheet" href="../CSSer/kjopeside.css">
+    <link rel="stylesheet" href="../CSSer/front.css">
+    <script src="../javascripts/java.js" defer></script>
+</head>
 <body>
     <div class="grid-container">
         <div class="grid-item item1">Kamba</div>
         
+        <!-- Handlekurv ikon -->
         <div class="grid-item shop">
-
             <a href="../kategorier/handlekurv.html">
-                <img src="../Bilder/Handle-kurv.webp" class="Handle-kurv"></a>
-         <p id="countDisplay">0</p></div>
-                
+                <img src="../Bilder/Handle-kurv.webp" alt="Handlekurv" class="Handle-kurv">
+            </a>
+            <p id="countDisplay">0</p> <!-- Viser antall varer i handlekurven -->
+        </div>
 
+        <!-- Navigasjonsknapper -->
         <div class="grid-item item2">
-    <a href="../Index.html">
-        <button class="myButton2">
-            <p>hjem</p> </button></a>
-            <a href="../kategorier/kjoler.Html">
+            <a href="../Index.html"><button class="myButton2"><p>Hjem</p></button></a>
+            <a href="../kategorier/kjoler.html"><button class="myButton2"><p>Kjoler</p></button></a>
+            <button class="myButton2"><p>Høst</p></button>
+            <button class="myButton2"><p>Vinter</p></button>
+            <button class="myButton2"><p>Sommer</p></button>
+        </div>
         
-                <button class="myButton2">
-            <p>kjoler</p> </button></a>
+        <!-- Produktinformasjon -->
+        <div class="grid-item item3">Merke/Navn/Info</div>
+        <div class="grid-item item4">999999 kr</div>
         
-            <button class="myButton2">
-            <p>Høst</p> </button>
-        
-            <button class="myButton2">
-            <p>Vinter</p> </button>
-        
-            <button class="myButton2">
-            <p>Sommer</p> </button></div>
-        
-            <div class="grid-item item3">merke/navn/info</div>
-        
-            <div class="grid-item item4">99999999kr</div>
-        
-            <div class="grid-item item5">
+        <!-- Legg til i handlekurv-knapp -->
+        <div class="grid-item item5">
+            <button id="counterButton" class="myButton2">Legg til i handlekurv</button>
+        </div>
+        <!-- Produktstørrelse -->
+        <div class="grid-item item6">Størrelse</div>
+        <div class="grid-item8"></div>
         
 
-                <div class="container">
-                    <button id="counterButton">Legg til i handlekurv</button>
-                                </div>   
-                </button></div> 
-        
-            <div class="grid-item item6">størrelse</div>
-        
-            <div class="grid-item item7"><img src="../Bilder/kjole.jpg"></div>
-        
-            <div class="grid-item item8"><img src="../Bilder/kjole.jpg"></div>
-      </div>
-
-    <script src="../javascripts/java.js"></script>
+    </div>
 </body>
+</html>

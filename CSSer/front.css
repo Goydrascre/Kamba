@@ -23,6 +23,7 @@ body {
   .titler {
     grid-column: 1 / span 4;
     grid-row: 1;
+    margin-right: 100px;
   }
   
   .meny {
@@ -32,6 +33,11 @@ body {
   .bilder {
     grid-column: 1/ span 4;
     grid-row: 3 / span 1;
+  }
+  .shop { 
+    justify-self: end; 
+    grid-column: 3 / span 2;
+    grid-row: 1;
   }
   .myButton {
     transition: all 0.2s ease ;  
@@ -86,4 +92,32 @@ body {
 }
 .Handle-kurv:hover {
   transform: scale(1.2);
+}
+.container {
+  text-align: center;
+}
+
+#counterButton {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+#counterButton:hover {
+  background-color: #656565;
+}
+
+#countDisplay {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
 }
