@@ -1,18 +1,4 @@
 body {
-
-.grid-container {
-  display: grid;
-  gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
-}
-
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px;
-  font-size: 30px; 
-}
 .item1 {
   grid-column: 1 / span 3;
   grid-row: 1;
@@ -34,17 +20,15 @@ body {
   grid-column: 3/ span 1;
   grid-row: 5 / span 1;
 
-}.item6 {
+}
+.item6 {
   grid-column: 3/ span 1;
   grid-row: 6 / span 3;
 
-}.item7 {
-  grid-column: 1/ span 1;
-  grid-row: 3 / span 4;
-
-}.item8 {
-  grid-column: 2/ span 1;
-  grid-row: 3 / span 4;
+}
+.item7 {
+  grid-column: 1/ span 2;
+  grid-row: 3 / span 5;
 }
 .shop { 
   justify-self: end; 
@@ -80,29 +64,50 @@ body {
   font-weight: bold;
   margin: 0;
 }
-#fullscreenContainer {
-  display: none;
+/* Thumbnail styles */
+.thumbnail {
+  width: 250px;
+  cursor: pointer;
+  margin: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.thumbnail:hover {
+  transform: scale(1.1);
+}
+
+/* Modal styles */
+.modal {
+  display: none; /* Hidden by default */
   position: fixed;
-  top: 0;
+  z-index: 1000;
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
   justify-content: center;
   align-items: center;
 }
 
-#fullscreenImage {
-  max-width: 90%;
-  max-height: 90%;
+/* Full-size image inside the modal */
+.modal-content {
+  width: 450px;
+  height: 900px;
+  max-width: 90%; /* Set a max width to prevent overflow */
+  max-height: 90%; /* Set a max height to prevent overflow */
+  border-radius: 5px; /* Optional: smooth edges */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add some shadow for a nicer look */
+  transition: transform 0.3s ease; /* Smooth scaling animation */
 }
 
-.thumbnail {
-  width: 150px;
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
   cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.thumbnail:hover {
-  transform: scale(1.05);
 }

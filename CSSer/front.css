@@ -33,6 +33,7 @@ body {
   .bilder {
     grid-column: 1/ span 4;
     grid-row: 3 / span 1;
+    width: 300;
   }
   .shop { 
     justify-self: end; 
@@ -120,4 +121,23 @@ body {
   font-size: 24px;
   font-weight: bold;
   margin: 0;
+}
+.src{
+  gap: 10px;
+}
+table {
+  width: 50%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: left;
+}
+.delete-button {
+  color: red;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  background: none;
 }
