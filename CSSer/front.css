@@ -125,10 +125,6 @@ body {
 .src{
   gap: 10px;
 }
-table {
-  width: 50%;
-  border-collapse: collapse;
-}
 th, td {
   border: 1px solid black;
   padding: 10px;
@@ -140,4 +136,26 @@ th, td {
   font-weight: bold;
   border: none;
   background: none;
+}
+table {
+  width: 40%;
+  height: 90%;
+  border-collapse: collapse;
+}
+/* Juster utseendet til bilde og tekst */
+td div {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Avstand mellom bilde og liste */
+}
+
+td ul {
+  list-style-type: none; /* Fjern punkter fra listen */
+  padding: 0;            /* Fjern innrykk */
+  margin: 0;             /* Fjern margin */
+}
+
+td ul li {
+  font-size: 14px;       /* Juster skriftstørrelse */
+  line-height: 1.5;      /* Juster linjeavstand */
 }

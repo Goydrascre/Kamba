@@ -22,13 +22,8 @@ document.getElementById("counterButton").addEventListener("click", function () {
 
         // Lagre den oppdaterte listen i localStorage
         localStorage.setItem('productIds', JSON.stringify(existingList));
-
-        console.log(`Produkt-ID "${produktId}" lagt til i listen.`);
-    } else {
-        console.log("Ingen produkt-ID funnet.");
     }
 });
-
 // Velg elementene
 const thumbnails = document.querySelectorAll('.thumbnail');
 const modal = document.getElementById('imageModal');
@@ -70,7 +65,7 @@ if (produktId === 'kjole1') {
     bilde1.src = '../Bilder/kjole1_side.jpg';
     bilde2.src = '../Bilder/kjole1_back.jpg';
 } else if (produktId === 'kjole2') {
-    hovedbilde.src = '../Bilder/kjole2.jpg';
+    hovedbilde.src = '../Bilder/svart_og_sølv_kjoleF.jpg';
     bilde1.src = '../Bilder/kjole2_side.jpg';
     bilde2.src = '../Bilder/kjole2_back.jpg';
 } else if (produktId === 'kjole3') {
@@ -81,6 +76,4 @@ if (produktId === 'kjole1') {
     hovedbilde.src = '../Bilder/kjole3.jpg';
     bilde1.src = '../Bilder/kjole3_side.jpg';
     bilde2.src = '../Bilder/kjole3_back.jpg';
-} else {
-    // Standardbilde hvis ingen id-parameter er valgt
 }
