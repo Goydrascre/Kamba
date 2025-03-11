@@ -1,161 +1,145 @@
 body {
-    background-color: rgb(255, 244, 244);
-  }
-  .grid-container {
-    display: grid;
-    gap: 10px;
-    background-color: #2196F3;
-    padding: 10px;
-  }
-  
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px;
-    font-size: 30px;
-  }
-  
-  .title {
-    justify-self: end; 
-    grid-column: 0 / span 0;
-    grid-row: 1;
-  }
-  .titler {
-    grid-column: 1 / span 4;
-    grid-row: 1;
-    margin-right: 100px;
-  }
-  
-  .meny {
-    grid-column: 1/ span 4;
-    grid-row: 2 / span 1;
-  }
-  .bilder {
-    grid-column: 1/ span 4;
-    grid-row: 3 / span 1;
-    width: 300;
-  }
-  .shop { 
-    justify-self: end; 
-    grid-column: 3 / span 2;
-    grid-row: 1;
-  }
-  .myButton {
-    transition: all 0.2s ease ;  
-    background: #91c8d5;
-    border: none;
-    padding: 1px 1px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  .myButton:hover {
-    filter: brightness(90%);
-    transition: filter 0.2s ease ;
-  }
-  .myButton2 { 
-    transition: all 0.2s ease ; 
-    filter: brightness(100%);
-    background: rgba(255, 255, 255, 0.8);
-    display: inline-block;
-    width: auto;
-    height: 55px;
-    border-radius: 25px;
-    font-size: auto;
-    cursor: pointer;
-    text-align: auto;
-    border: 5px solid #2196F3;
+  background-color: #725c45;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  background-color: #725c45;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(226,201,170,1);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.title {
+  justify-self: end; 
+  grid-column: 0 / span 0;
+  grid-row: 1;
+}
+.titler {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  margin-right: 100px;
+}
+
+.meny {
+  grid-column: 1/ span 4;
+  grid-row: 2 / span 1;
+  padding: 0px;
+}
+.bilder {
+  grid-column: 1/ span 4;
+  grid-row: 3 / span 1;
+}
+
+.Handlekurvboks {
+  grid-column: 1/ span 4;
+  grid-row: 3 / span 1;
+  text-align: left;
+}
+
+.shop { 
+  justify-self: end; 
+  grid-column: 3 / span 2;
+  grid-row: 1;
+}
+
+.betal {
+  grid-column: 1 / span 3;
+  grid-column: 3;
+}
+
+
+.myButton {
+  transition: all 0.2s ease ;  
+  background: #b1a37c;
+  border: none;
+  padding: 1px 1px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.myButton:hover {
+  filter: brightness(90%);
+  transition: filter 0.2s ease ;
+}
+.myButton2 { 
+  transition: all 0.2s ease ; 
+  filter: brightness(100%);
+  background: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border-radius: 0px;
+  font-size: auto;
+  cursor: pointer;
+  text-align: auto;
+  border: 0px solid #b1a37c;
+  border: 3px solid #d9cdab;
 }
 
 .myButton2:hover {
-    filter: brightness(95%);
-    border: 5px solid #91c8d5;
-    transition: all 0.2s ease ; 
+  filter: brightness(95%);
+  border: 3px solid #cabfa0;
+  transition: all 0.2s ease ; 
 }
 .myButton3 {
-  transition: all 0.2s ease ; 
-  font-size: 21px; 
-  border-radius: 25px;
-  background: #343434;
-  width: 450px;
-  height: 70px;
-  display: inline-block;
-  place-items: center; 
+transition: all 0.2s ease ; 
+font-size: 21px; 
+border-radius: 0px;
+background: #343434;
+width: 450px;
+height: 70px;
+display: inline-block;
+place-items: center; 
 }
 
 .myButton3:hover {
-  transition: all 0.2s ease ; 
-  background: #5f5f5f;
+transition: all 0.2s ease ; 
+background: #5f5f5f;
 }
 .Handle-kurv {
-  transition: transform 0.3s;
+transition: transform 0.3s;
 }
 .Handle-kurv:hover {
-  transform: scale(1.2);
+transform: scale(1.2);
 }
 .container {
-  text-align: center;
+text-align: center;
 }
 
 #counterButton {
-  background-color: #000000;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  border-radius: 5px;
+background-color: #000000;
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 10px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+border-radius: 5px;
 }
 
 #counterButton:hover {
-  background-color: #656565;
+background-color: #656565;
 }
 
 #countDisplay {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
+font-size: 24px;
+font-weight: bold;
+margin: 0;
 }
 .src{
-  gap: 10px;
-}
-th, td {
-  border: 1px solid black;
-  padding: 10px;
-  text-align: left;
-}
-.delete-button {
-  color: red;
-  cursor: pointer;
-  font-weight: bold;
-  border: none;
-  background: none;
-}
-table {
-  width: 40%;
-  height: 90%;
-  border-collapse: collapse;
-}
-/* Juster utseendet til bilde og tekst */
-td div {
-  display: flex;
-  align-items: center;
-  gap: 15px; /* Avstand mellom bilde og liste */
+gap: 10px;
+
 }
 
-td ul {
-  list-style-type: none; /* Fjern punkter fra listen */
-  padding: 0;            /* Fjern innrykk */
-  margin: 0;             /* Fjern margin */
-}
-
-td ul li {
-  font-size: 14px;       /* Juster skriftstørrelse */
-  line-height: 1.5;      /* Juster linjeavstand */
-}
