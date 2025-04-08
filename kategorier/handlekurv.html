@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSSer/front.css">
+    <link rel="stylesheet" href="../CSSer/handlekurv.css">
+    <title>Produkt-ID i Tabell</title>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item titler">
+            <img src="../Bilder/KambaLogo.jpeg">
+        </div>
+        <div class="grid-item shop">
+
+            <a href="handlekurv.html">
+                <img src="../Bilder/Handle-kurv.webp" class="Handle-kurv"></a>
+         <p id="countDisplay">0</p></div>
+
+
+        <div class="grid-item meny">
+        <a href="../Index.html">
+            <button class="myButton2">
+                <p>hjem</p> </button></a>
+        <a href="kjoler.html">
+            <button class="myButton2">
+                <p>kjoler</p> </button></a>
+            <button class="myButton2">
+                <p>dwhdwd</p> </button>
+            <button class="myButton2">
+                <p>whdiwhdidhidh</p> </button>
+            <button class="myButton2">
+                <p>wdj</p> </button>
+        </div>
+        <div class="grid-item handlekurvboks">
+
+            <h1>Produkt-ID Oversikt</h1>
+        <table>
+        <thead>
+            <tr>
+                <th>Lagret Produkt-ID</th>
+            </tr>
+        </thead>
+            <tbody id="productTableBody">
+            <!-- Dynamiske rader -->
+            </tbody>
+        </table>
+            </div>
+    </div>
+    <div class="content">
+        <!-- Lange innhold for å simulere scrolling -->
+    </div>
+
+    <!-- FLAT MENY SOM FØLGER MED -->
+    <div class="floating-menu" id="floatingMenu">
+        <p id="totalPris">Total pris: 0 kr</p>
+
+        <button>Betal nå</button>
+    </div>
+    <script src="../javascripts/Handlekurv.js"></script>
+</body>
+</html>

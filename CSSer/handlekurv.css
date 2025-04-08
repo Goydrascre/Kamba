@@ -1,0 +1,79 @@
+.body {
+    background-color: rgb(255, 244, 244);
+}
+
+.h1 {
+    font-size: 80px;
+    text-align: left;
+}
+
+p1 {
+    color: black;
+}
+
+p2 {
+    color: #ccc;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    text-align: left;
+    font-size: 25px;
+}
+/* Gjør at bilde og tekst vises side om side */
+.product-container {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Avstand mellom bilde og tekst */
+}
+
+/* Gjør tabellen litt penere */
+#productTableBody td {
+    padding: 16px;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+}
+
+/* Stil for slett-knappen */
+button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffdddd;
+}
+.content {
+padding: 20px;
+}
+
+.content {
+    padding: 20px;
+}
+
+/* FLAT MENY SOM FØLGER MED */
+.floating-menu {
+    position: absolute;
+    bottom: 100px;
+    left: 80%;
+
+    transform: translateX(-50%);
+    width: 300px;
+    height: 200px;
+    background-color: rgba(226,201,170,1);
+    color: black;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: top 0.3s ease;
+}

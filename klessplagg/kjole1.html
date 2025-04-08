@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamba kjoler</title>
+    <link rel="stylesheet" href="../CSSer/kjopeside.css">
+    <link rel="stylesheet" href="../CSSer/front.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">Kamba</div>
+        
+        <!-- Handlekurv ikon -->
+        <div class="grid-item shop">
+            <a href="../kategorier/handlekurv.html">
+                <img src="../Bilder/Handle-kurv.webp" alt="Handlekurv" class="Handle-kurv">
+            </a>
+            <p id="countDisplay">0</p>
+        </div>
+
+        <!-- Navigasjonsknapper -->
+        <div class="grid-item item2">
+            <a href="../Index.html"><button class="myButton2"><p>Hjem</p></button></a>
+            <a href="../kategorier/kjoler.html">
+            <button class="myButton2"><p>Kjoler</p></button></a>
+            <button class="myButton2"><p>Høst</p></button>
+            <button class="myButton2"><p>Vinter</p></button>
+            <button class="myButton2"><p>Sommer</p></button>
+        </div>
+        
+        <!-- Produktinformasjon -->
+        <div class="grid-item item3" id="info">Merke/Navn/Info</div>
+        <div class="grid-item item4" id="price">Pris</div>
+        <!-- Legg til i handlekurv-knapp -->
+        <div class="grid-item item5">
+            <button id="counterButton" class="myButton2">Legg til i handlekurv</button>
+        </div>
+        
+        <!-- Produktstørrelse -->
+        <div class="grid-item item6">Størrelse</div>
+
+        <!-- Produktbilder -->   
+        <div class="grid-item item7">
+        <!-- Modal-struktur -->
+        <div class="modal" id="imageModal">
+            <span class="close" id="closeModal">&times;</span>
+            <img class="modal-content" id="modalImage" alt="Full-size kjole">
+        </div>
+        <img class="thumbnail" id="hovedbilde" src="" alt="Produktbilde">
+    </div>
+    <!-- JavaScript inkludert som en ekstern fil -->
+    <script src="../javascripts/java.js" defer></script>
+</body>
+</html>
