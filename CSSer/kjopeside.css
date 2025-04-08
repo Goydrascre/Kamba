@@ -92,16 +92,19 @@ body {
   
   /* Full-size image inside the modal */
   .modal-content {
+    cursor: zoom-in;
     width: 450px;
     height: 900px;
-    max-width: 90%; /* Set a max width to prevent overflow */
-    max-height: 90%; /* Set a max height to prevent overflow */
+    max-width: 100%; /* Set a max width to prevent overflow */
+    height: auto; /* Set a max height to prevent overflow */
     border-radius: 5px; /* Optional: smooth edges */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add some shadow for a nicer look */
-    transition: transform 0.3s ease; /* Smooth scaling animation */
+    transition: transform 0.3432s ease; /* Smooth scaling animation */
   }
-  
-  
+
+  .modal-content.zoomed {
+    cursor: zoom-out;
+}
   
   /* Close button */
   .close {

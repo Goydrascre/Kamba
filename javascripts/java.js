@@ -50,6 +50,9 @@ counterButton.addEventListener("click", function () {
 // --- Modal og bildevisning ---
 
 // Velg elementene for modal
+// --- Modal og bildevisning ---
+
+// Velg elementene for modal
 const thumbnails = document.querySelectorAll('.thumbnail');
 const modal = document.getElementById('imageModal');
 const modalImage = document.getElementById('modalImage');
@@ -60,6 +63,8 @@ thumbnails.forEach(thumbnail => {
     thumbnail.addEventListener('click', () => {
         modal.style.display = 'flex';
         modalImage.src = thumbnail.src; // Sett modalens bilde til det klikkede bildet
+        modalImage.classList.remove('zoomed'); // Reset zoom when opening modal
+        modalImage.style.transform = 'scale(1)'; // Ensure image is not zoomed in initially
     });
 });
 
@@ -72,6 +77,25 @@ closeModal.addEventListener('click', () => {
 modal.addEventListener('click', (e) => {
     if (e.target === modal) {
         modal.style.display = 'none';
+    }
+});
+
+// Zoom functionality: zoom in when clicking on the image
+modalImage.addEventListener("click", function (event) {
+    if (modalImage.classList.contains("zoomed")) {
+        modalImage.classList.remove("zoomed");
+        modalImage.style.transform = "scale(1)"; // Reset zoom
+    } else {
+        // Get click position relative to the image
+        const rect = modalImage.getBoundingClientRect();
+        const offsetX = event.clientX - rect.left;
+        const offsetY = event.clientY - rect.top;
+
+        // Set the zoom origin to the clicked point
+        modalImage.style.transformOrigin = `${(offsetX / rect.width) * 100}% ${(offsetY / rect.height) * 100}%`;
+
+        modalImage.classList.add("zoomed");
+        modalImage.style.transform = "scale(4)"; // Zoom in
     }
 });
 
@@ -245,3 +269,4 @@ function toggleButtonPosition() {
         button.style.bottom = '20px';  // Sett tilbake til bunnens posisjon
     }
 }
+
