@@ -94,7 +94,7 @@ body {
   .modal-content {
     cursor: zoom-in;
     width: 450px;
-    height: 900px;
+
     max-width: 100%; /* Set a max width to prevent overflow */
     height: auto; /* Set a max height to prevent overflow */
     border-radius: 5px; /* Optional: smooth edges */
