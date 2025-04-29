@@ -1,19 +1,25 @@
 body {
   background-color: rgb(109, 84, 54);
 }
-
-
 .grid-container {
   background-color: rgb(109, 84, 54);
   display: grid;
   gap: 10px;
   position: relative;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 10px;
 }
 a img {
   transition: transform 0.1s ease-in-out;
 }
-
+.header-bg {
+  grid-column: 1 / -1;               /* dekker hele raden */
+  grid-row: 1;                       /* plasser i rad 1 */
+  background-color: rgba(226, 201, 170, 1);  /* den beige fargen */
+  z-index: 0;                        /* legg den bak andre elementer */
+  height: auto;                     /* juster høyde som passer med logo/shop */
+  position: relative;
+}
 a:hover img {
   transform: scale(1.03); /* Zoomer inn bildet litt ved hover */
 }
@@ -22,7 +28,11 @@ a:hover img {
   height: 300;
   border: 2px solid black;
 }
-
+.titler,
+.shop {
+  grid-row: 1;
+  z-index: 1;   /* foran bakgrunnen */
+}
 .grid-item {
   background-color: rgba(226,201,170,1);
   position: relative;
@@ -38,9 +48,11 @@ a:hover img {
   grid-row: 1;
 }
 .titler {
-  grid-column: 1 / span 4;
-  grid-row: 1;
-  margin-right: 100px;
+  grid-column: 2;              /* plasser i midtkolonnen */
+  display: flex;               /* bruk flexbox for presis sentrering */
+  justify-content: center;     /* sentrer horisontalt */
+  align-items: center;         /* sentrer vertikalt hvis relevant */
+  margin: 0;  
 }
 
 .meny {
@@ -61,7 +73,7 @@ a:hover img {
 
 .shop { 
   justify-self: end; 
-  grid-column: 3 / span 2;
+  grid-column: 3;
   grid-row: 1;
 }
 
@@ -159,3 +171,9 @@ gap: 10px;
 
 }
 
+.kontakt{
+  justify-self: center;
+  background: #b1a37c;
+  margin: 10px;
+  align-self: center;
+}
