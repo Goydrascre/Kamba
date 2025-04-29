@@ -40,15 +40,14 @@ th, td {
 }
 
 /* Stil for slett-knappen */
-button {
-    padding: 8px 12px;
+.sbutton {
     border: none;
     background-color: #f5f5f5;
     border-radius: 8px;
     cursor: pointer;
 }
 
-button:hover {
+.sbutton:hover {
     background-color: #ffdddd;
 }
 .content {

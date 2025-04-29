@@ -112,7 +112,7 @@ function oppdaterTabell() {
 
             // Celle for slett-knapp
             const deleteCell = document.createElement('td');
-            const deleteButton = document.createElement('button');
+            const deleteButton = document.createElement('sbutton');
             deleteButton.innerText = 'X';
             deleteButton.style.color = 'red';
             deleteButton.style.cursor = 'pointer';
@@ -130,7 +130,7 @@ function oppdaterTabell() {
         const row = document.createElement('tr');
         const cell = document.createElement('td');
         cell.colSpan = 2;
-        cell.innerText = "Ingen produkt-ID-er funnet.";
+        cell.innerText = "Ingen kjoler i handlekurven.";
         row.appendChild(cell);
         tableBody.appendChild(row);
     }

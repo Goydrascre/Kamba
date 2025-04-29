@@ -1,36 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="no">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamba kjoler</title>
-    <link rel="stylesheet" href="../CSSer/kjopeside.css">
-    <link rel="stylesheet" href="../CSSer/front.css">
-</head>
+    <head>
+        <link rel="stylesheet" href="../CSSer/front.css">
+        <link rel="stylesheet" href="../CSSer/kjopeside.css">
+        <title>Kamba</title>
+    </head>
 <body>
     <div class="grid-container">
-        <div class="grid-item item1"><img src="../Bilder/KambaLogo.jpeg"></div>
-        
-        <!-- Handlekurv ikon -->
-        <div class="grid-item shop">
-            <a href="../kategorier/handlekurv.html">
-                <img src="../Bilder/Handle-kurv.webp" alt="Handlekurv" class="Handle-kurv">
-            </a>
-            <p id="countDisplay">0</p>
-        </div>
 
-        <!-- Navigasjonsknapper -->
-        <div class="grid-item item2">
-            <a href="../index.html"><button class="myButton2"><p>Hjem</p></button></a>
-            <a href="../kategorier/kjoler.html">
-            <button class="myButton2"><p>Kjoler</p></button></a>
-            <button class="myButton2"><p>Høst</p></button>
-            <button class="myButton2"><p>Vinter</p></button>
-            <button class="myButton2"><p>Sommer</p></button>
-            <button class="myButton2">
-                <p>kontakt oss</p> </button>
+        <!-- 1: Bakgrunnsblokk (MÅ komme først) -->
+        <div class="grid-item header-bg"></div>
+      
+        <!-- 2: Logo -->
+        <div class="grid-item titler">
+          <img src="../Bilder/KambaLogo.jpeg" alt="Kamba Logo">
         </div>
-        
+      
+        <!-- 3: Handlekurv -->
+        <div class="grid-item shop">
+          <a href="kategorier/handlekurv.html">
+            <img src="../Bilder/Handle-kurv.webp" class="Handle-kurv" alt="Handlekurv">
+          </a>
+          <p id="countDisplay">0</p>
+        </div>
+      
+        <div class="grid-item meny">
+
+            <a href="../kategorier/kjoler.Html">
+                <button class="myButton2">
+                    <p>kjoler</p> </button></a>
+                <button class="myButton2">
+                    <p>dwhdwd</p> </button>
+                <button class="myButton2">
+                    <p>whdiwhdidhidh</p> </button>
+                <button class="myButton2">
+                    <p>wdj</p> </button>
+            <a href="kategorier/kontakt.html">
+                <button class="myButton2">
+                    <p>kontakt oss</p> </button></a>
+            </div>
         <!-- Produktinformasjon -->
         <div class="grid-item item3" id="info">Merke/Navn/Info</div>
         <div class="grid-item item4" id="price">Pris</div>
