@@ -110,133 +110,134 @@ const bilde2 = document.getElementById('bilde2');
 // Oppdater bilder basert på produktId
 if (produktId === 'kjole1') {
     hovedbilde.src = '../Bilder/Svart_og_hvit_kjoleF.jpg';
-    bilde1.src = '../Bilder/kjole1_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole1_back.jpg';
 } else if (produktId === 'kjole2') {
     hovedbilde.src = '../Bilder/svart_og_solv_kjoleF.jpg';
-    bilde1.src = '../Bilder/kjole2_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole2_back.jpg';
 } else if (produktId === 'kjole3') {
     hovedbilde.src = '../Bilder/Svart_og_solv_lang_kjoleF.jpg';
-    bilde1.src = '../Bilder/kjole3_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole3_back.jpg';
 } else if (produktId === 'kjole4') {
     hovedbilde.src = '../Bilder/Lang_blomst_kjole_rodF.jpg';
-    bilde1.src = '../Bilder/kjole4_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole4_back.jpg';
 } else if (produktId === 'kjole5') {
     hovedbilde.src = '../Bilder/Lang_blomst_kjole_gronnF.jpg';
-    bilde1.src = '../Bilder/kjole5_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole5_back.jpg';
 } else if (produktId === 'kjole6') {
     hovedbilde.src = '../Bilder/Blo_og_solv_kjoleF.jpg';
-    bilde1.src = '../Bilder/kjole6_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole6_back.jpg';
 } else if (produktId === 'kjole7') {
     hovedbilde.src = '../Bilder/Rod_frakk.jpg';
-    bilde1.src = '../Bilder/kjole7_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg'); // Har ikke F, men funker fortsatt
     bilde2.src = '../Bilder/kjole7_back.jpg';
 } else if (produktId === 'kjole8') {
     hovedbilde.src = '../Bilder/Leopard_kjoleF.jpg';
-    bilde1.src = '../Bilder/kjole8_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole8_back.jpg';
 } else if (produktId === 'kjole9') {
     hovedbilde.src = '../Bilder/Leopard_kjole_langF.jpg';
-    bilde1.src = '../Bilder/kjole9_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole9_back.jpg';
 } else if (produktId === 'kjole10') {
     hovedbilde.src = '../Bilder/Gull_kjoleF.jpg';
-    bilde1.src = '../Bilder/kjole10_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole10_back.jpg';
 } else if (produktId === 'kjole11') {
     hovedbilde.src = '../Bilder/Blo_kjole_kortF.jpg';
-    bilde1.src = '../Bilder/kjole11_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole11_back.jpg';
 } else if (produktId === 'kjole12') {
     hovedbilde.src = '../Bilder/Fiske_kjoleF.jpg';
-    bilde1.src = '../Bilder/kjole12_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole12_back.jpg';
 } else if (produktId === 'kjole13') {
     hovedbilde.src = '../Bilder/Fugl_kjortF.jpg';
-    bilde1.src = '../Bilder/kjole13_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole13_back.jpg';
 } else if (produktId === 'kjole14') {
     hovedbilde.src = '../Bilder/Gronn_blomst_kjoleF.jpg';
-    bilde1.src = '../Bilder/kjole14_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole14_back.jpg';
 } else if (produktId === 'kjole15') {
     hovedbilde.src = '../Bilder/Gul_kjort.jpg';
-    bilde1.src = '../Bilder/kjole15_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg'); // Ikke F, men gjør ikke skade
     bilde2.src = '../Bilder/kjole15_back.jpg';
 } else if (produktId === 'kjole16') {
     hovedbilde.src = '../Bilder/hvit_blomster_kjole_kortF.jpg';
-    bilde1.src = '../Bilder/kjole16_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole16_back.jpg';
 } else if (produktId === 'kjole17') {
     hovedbilde.src = '../Bilder/hvit_kjole.jpg';
-    bilde1.src = '../Bilder/kjole17_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole17_back.jpg';
 } else if (produktId === 'kjole18') {
     hovedbilde.src = '../Bilder/Hvit_monster_kjoleF.jpg';
-    bilde1.src = '../Bilder/kjole18_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole18_back.jpg';
 } else if (produktId === 'kjole19') {
     hovedbilde.src = '../Bilder/hvit_og_oransje_kjoleF.jpg';
-    bilde1.src = '../Bilder/kjole19_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole19_back.jpg';
 } else if (produktId === 'kjole20') {
     hovedbilde.src = '../Bilder/Hvit_og_svart_spiral_kjoleF.jpg';
-    bilde1.src = '../Bilder/kjole20_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole20_back.jpg';
 } else if (produktId === 'kjole21') {
     hovedbilde.src = '../Bilder/Hvit_og_svart_trekant_kjoleF.jpg';
-    bilde1.src = '../Bilder/kjole21_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole21_back.jpg';
 } else if (produktId === 'kjole22') {
     hovedbilde.src = '../Bilder/hvit_blomst_kjoleF.jpg';
-    bilde1.src = '../Bilder/kjole22_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole22_back.jpg';
 } else if (produktId === 'kjole23') {
     hovedbilde.src = '../Bilder/Lang_Kjole_BloF.jpg';
-    bilde1.src = '../Bilder/kjole23_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole23_back.jpg';
 } else if (produktId === 'kjole24') {
     hovedbilde.src = '../Bilder/Lang_Kjole_RodF.jpg';
-    bilde1.src = '../Bilder/kjole24_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole24_back.jpg';
 } else if (produktId === 'kjole25') {
     hovedbilde.src = '../Bilder/Lang_Kjole_RosaF.jpg';
-    bilde1.src = '../Bilder/kjole25_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole25_back.jpg';
 } else if (produktId === 'kjole26') {
     hovedbilde.src = '../Bilder/rod_blomster_kjoleF.jpg';
-    bilde1.src = '../Bilder/kjole26_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole26_back.jpg';
 } else if (produktId === 'kjole27') {
     hovedbilde.src = '../Bilder/Rod_kjort.jpg';
-    bilde1.src = '../Bilder/kjole27_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole27_back.jpg';
 } else if (produktId === 'kjole28') {
     hovedbilde.src = '../Bilder/Rosa_kjoleF.jpg';
-    bilde1.src = '../Bilder/kjole28_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole28_back.jpg';
 } else if (produktId === 'kjole29') {
     hovedbilde.src = '../Bilder/Solv_kjole_langF.jpg';
-    bilde1.src = '../Bilder/kjole29_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole29_back.jpg';
 } else if (produktId === 'kjole30') {
     hovedbilde.src = '../Bilder/Svart_kjoleF.jpg';
-    bilde1.src = '../Bilder/kjole30_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole30_back.jpg';
 } else if (produktId === 'kjole31') {
     hovedbilde.src = '../Bilder/Svart_kjole_kjort.jpg';
-    bilde1.src = '../Bilder/kjole31_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole31_back.jpg';
 } else if (produktId === 'kjole32') {
     hovedbilde.src = '../Bilder/Svart_blomster_kjoleF.jpg';
-    bilde1.src = '../Bilder/kjole32_side.jpg';
+    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole32_back.jpg';
 }
+
 
 
 // --- Andre funksjoner, for eksempel reset med Shift+R og scroll-knapp ---
