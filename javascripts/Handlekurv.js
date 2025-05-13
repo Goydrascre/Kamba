@@ -187,20 +187,17 @@ function oppdaterModalPris() {
 emailjs.init("pWUGAgdVVzPGTdCuV"); // ← Sett inn din public key fra EmailJS
 
 document.getElementById("betalKnapp").addEventListener("click", function() {
-  const totalPris = document.getElementById("totalPris").textContent;
+    const totalPris = document.getElementById("totalPris").textContent;
 
-  emailjs.send("service_oexncyh", "template_xksn0ds", {
-    message: `Bruker trykket "Betal nå" med ${totalPris}`
-  }).then(function() {
-    console.log("E-post sendt!");
-  }, function(error) {
-    console.error("Feil ved sending:", error);
+    emailjs.send("service_oexncyh", "template_xksn0ds", {
+      message: `Bruker trykket "Betal nå" med ${totalPris}`
+    }).then(function() {
+      console.log("E-post sendt!");
+      alert("E-post sendt!");
+    }, function(error) {
+      console.error("Feil ved sending:", error);
+      alert("Feil ved sending: " + error.text);
+    });
   });
-});
-// Du må også kalle denne funksjonen når modalen åpnes
-betalKnapp.addEventListener('click', function() {
-    document.getElementById('betalModal').classList.remove('hidden');  // Vis modal
-    oppdaterModalPris();  // Oppdater pris i modal
-});
 oppdaterTabell();
 oppdaterPrisVisning();
