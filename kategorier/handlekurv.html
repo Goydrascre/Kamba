@@ -55,10 +55,14 @@
     <!-- FLAT MENY SOM FØLGER MED -->
     <div class="floating-menu" id="floatingMenu">
         <p id="totalPris">Total pris: 0 kr</p>
-
-        <button>Betal nå</button>
+        <button id="betalKnapp">Betal nå</button>
     </div>
-    
+    <div id="betalModal" class="modal hidden">
+        <div class="modal-content">
+          <p>Trykk her for å betale med Vipps:</p>
+          <a href="https://www.vipps.no" target="_blank">Gå til Vipps</a>
+        </div>
+      </div>
     <script src="../javascripts/Handlekurv.js"></script>
 </body>
 </html>

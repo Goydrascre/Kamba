@@ -43,21 +43,16 @@ const produktBilder = {
 
 function beregnTotalPris() {
     let totalPris = 0;
-
-    productList.forEach((id) => {
+    productList.forEach(id => {
         const produktInfo = produktBilder[id];
         if (produktInfo) {
-            const prisTekst = produktInfo.tekst.find((tekst) => tekst.toLowerCase().includes("pris"));
+            const prisTekst = produktInfo.tekst.find(t => t.toLowerCase().includes("pris"));
             if (prisTekst) {
-                // Ekstrakter prisverdien (antar formatet "pris: XXXX")
-                const pris = parseInt(prisTekst.replace(/\D/g, ''), 10); // Fjerner alt annet enn tall
-                if (!isNaN(pris)) {
-                    totalPris += pris;
-                }
+                const pris = parseInt(prisTekst.replace(/\D/g, ''), 10);
+                if (!isNaN(pris)) totalPris += pris;
             }
         }
     });
-
     return totalPris;
 }
 
@@ -170,5 +165,18 @@ function toggleMenuPosition() {
     menu.style.bottom = '100px'; // Sett tilbake til bunnposisjon
   }
 }
+const betalKnapp = document.getElementById("betalKnapp");
+const modal = document.getElementById("betalModal");
+
+betalKnapp.addEventListener("click", () => {
+    modal.classList.remove("hidden");
+});
+
+modal.addEventListener("click", (e) => {
+    if (!e.target.closest(".modal-content")) {
+        modal.classList.add("hidden");
+    }
+});
+
 oppdaterTabell();
 oppdaterPrisVisning();
