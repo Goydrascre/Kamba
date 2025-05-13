@@ -134,7 +134,6 @@ if (produktId === 'kjole1') {
     bilde2.src = '../Bilder/kjole6_back.jpg';
 } else if (produktId === 'kjole7') {
     hovedbilde.src = '../Bilder/Rod_frakk.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg'); // Har ikke F, men funker fortsatt
     bilde2.src = '../Bilder/kjole7_back.jpg';
 } else if (produktId === 'kjole8') {
     hovedbilde.src = '../Bilder/Leopard_kjoleF.jpg';
@@ -166,15 +165,13 @@ if (produktId === 'kjole1') {
     bilde2.src = '../Bilder/kjole14_back.jpg';
 } else if (produktId === 'kjole15') {
     hovedbilde.src = '../Bilder/Gul_kjort.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg'); // Ikke F, men gjør ikke skade
     bilde2.src = '../Bilder/kjole15_back.jpg';
 } else if (produktId === 'kjole16') {
     hovedbilde.src = '../Bilder/hvit_blomster_kjole_kortF.jpg';
     bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole16_back.jpg';
 } else if (produktId === 'kjole17') {
-    hovedbilde.src = '../Bilder/hvit_kjole.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
+    hovedbilde.src = '../Bilder/hvit_sølv_kjoleF.jpg';
     bilde2.src = '../Bilder/kjole17_back.jpg';
 } else if (produktId === 'kjole18') {
     hovedbilde.src = '../Bilder/Hvit_monster_kjoleF.jpg';
@@ -214,7 +211,6 @@ if (produktId === 'kjole1') {
     bilde2.src = '../Bilder/kjole26_back.jpg';
 } else if (produktId === 'kjole27') {
     hovedbilde.src = '../Bilder/Rod_kjort.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole27_back.jpg';
 } else if (produktId === 'kjole28') {
     hovedbilde.src = '../Bilder/Rosa_kjoleF.jpg';
@@ -229,7 +225,7 @@ if (produktId === 'kjole1') {
     bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole30_back.jpg';
 } else if (produktId === 'kjole31') {
-    hovedbilde.src = '../Bilder/Svart_kjole_kjort.jpg';
+    hovedbilde.src = '../Bilder/Svart_kjole_kjortF.jpg';
     bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
     bilde2.src = '../Bilder/kjole31_back.jpg';
 } else if (produktId === 'kjole32') {
