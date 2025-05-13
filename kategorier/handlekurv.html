@@ -1,15 +1,19 @@
 <!doctype html>
 <html lang="no">
 <meta charset="UTF-8">
-    <head>
-        <link rel="stylesheet" href="../CSSer/front.css">
-        <link rel="stylesheet" href="../CSSer/handlekurv.css">
-        <title>Kamba</title>
-        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-  emailjs.init("pWUGAgdVVzPGTdCuV"); // Din public key
-</script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSSer/front.css">
+    <link rel="stylesheet" href="../CSSer/handlekurv.css">
+    <title>Kamba</title>
+  
+    <script type="module">
+      import emailjs from 'https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js';
+      emailjs.init('pWUGAgdVVzPGTdCuV'); // Din public key
+      window.emailjs = emailjs; // gjør det tilgjengelig i vanlig JS
+    </script>
+  </head>
+  
 <body>
     <div class="grid-container">
 
