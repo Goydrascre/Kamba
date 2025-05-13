@@ -94,11 +94,13 @@ padding: 20px;
   }
   
   .modal-content {
-    background-color: white;
+    background-color: rgba(226,201,170,1);
     padding: 2rem;
     border-radius: 1rem;
     text-align: center;
-    max-width: 300px;
+    width: 400px;
+    height: 250px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    font-size: 35px;
   }
   

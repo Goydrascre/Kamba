@@ -177,6 +177,30 @@ modal.addEventListener("click", (e) => {
         modal.classList.add("hidden");
     }
 });
+function oppdaterModalPris() {
+    const totalPris = beregnTotalPris();
+    const prisElementModal = document.getElementById('totalPrisModal');
+    if (prisElementModal) {
+        prisElementModal.innerText = `${totalPris} kr`; // Oppdaterer prisen i modal
+    }
+}
+emailjs.init("pWUGAgdVVzPGTdCuV"); // ← Sett inn din public key fra EmailJS
 
+document.getElementById("betalKnapp").addEventListener("click", function() {
+  const totalPris = document.getElementById("totalPris").textContent;
+
+  emailjs.send("service_oexncyh", "template_xksn0ds", {
+    message: `Bruker trykket "Betal nå" med ${totalPris}`
+  }).then(function() {
+    console.log("E-post sendt!");
+  }, function(error) {
+    console.error("Feil ved sending:", error);
+  });
+});
+// Du må også kalle denne funksjonen når modalen åpnes
+betalKnapp.addEventListener('click', function() {
+    document.getElementById('betalModal').classList.remove('hidden');  // Vis modal
+    oppdaterModalPris();  // Oppdater pris i modal
+});
 oppdaterTabell();
 oppdaterPrisVisning();
