@@ -99,7 +99,7 @@ padding: 20px;
     border-radius: 1rem;
     text-align: center;
     width: 400px;
-    height: 250px;
+    height: auto;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     font-size: 35px;
   }
