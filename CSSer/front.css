@@ -104,26 +104,27 @@ a:hover img {
   filter: brightness(90%);
   transition: filter 0.2s ease ;
 }
-.myButton2 { 
-  transition: all 0.2s ease ; 
-  filter: brightness(100%);
-  background: rgba(255, 255, 255, 0.8);
+.myButton2 {
   display: inline-block;
-  width: auto;
-  height: auto;
-  border-radius: 0px;
-  font-size: auto;
-  cursor: pointer;
-  text-align: auto;
-  border: 0px solid #b1a37c;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.8);
   border: 3px solid #d9cdab;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: inherit;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* viktig for <a> */
+  transition: all 0.2s ease;
+  filter: brightness(100%);
 }
 
 .myButton2:hover {
   filter: brightness(95%);
   border: 3px solid #cabfa0;
-  transition: all 0.2s ease ; 
 }
+
 .myButton3 {
 transition: all 0.2s ease ; 
 font-size: 21px; 
