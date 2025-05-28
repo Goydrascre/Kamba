@@ -7,7 +7,7 @@ const tableBody = document.getElementById('productTableBody');
 
 // Lag en mapping mellom produkt-ID-er og bildelenker
 const produktBilder = {
-    "kjole1": { bilde: "../Bilder/Svart_og_hvit_kjoleF liten.jpg", tekst: ["Svart og hvit kjole", "Størrelse: M", "Materiale: Bomull", "Pris: 4483"] },
+    "kjole1": { bilde: "../Bilder/Svart_og_hvit_kjoleF liten.jpg", tekst: ["Størrelse: M", "Pris: 4483"] },
 
     "kjole2": { bilde: "../Bilder/svart_og_solv_kjoleF liten.jpg", tekst: ["Svart og sølv kjole", "Størrelse: L", "Materiale: Silke", "Pris: 1933"] },
 
