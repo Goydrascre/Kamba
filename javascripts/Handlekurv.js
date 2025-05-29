@@ -37,19 +37,19 @@ const produktBilder = {
 
     "kjole15": { bilde: "../Bilder/Gul_kjort liten.jpg", tekst: ["Gul kjortel", "Størrelse: L", "Materiale: Fløyel", "Pris: 2800"] },
 
-    "kjole16": { bilde: "../Bilder/hvit_blomster_kjole_kortF liten.jpg", tekst: ["Hvit kort blomsterkjole", "Størrelse: M", "Materiale: Bomull", "Pris: 2499"] },
+    "kjole16": { bilde: "../Bilder/hvit_blomster_kjole_kortF liten.jpg", tekst: ["Hvit kort blomsterkjole", "Størrelse: M", "Materiale: Bomull", "Pris: 2499"] }, //ikke lenger//
 
-    "kjole17": { bilde: "../Bilder/hvit_kjole liten.jpg", tekst: ["Hvit kjole", "Størrelse: S", "Materiale: Silke", "Pris: 3999"] },
+    "kjole17": { bilde: "../Bilder/hvit_kjole liten.jpg", tekst: ["Hvit kjole", "Størrelse: S", "Materiale: Silke", "Pris: 499 "] },
 
-    "kjole18": { bilde: "../Bilder/Hvit_monster_kjoleF liten.jpg", tekst: ["Hvit mønstret kjole", "Størrelse: L", "Materiale: Polyester", "Pris: 2300"] },
+    "kjole18": { bilde: "../Bilder/Hvit_monster_kjoleF liten.jpg", tekst: ["Hvit mønstret kjole", "Størrelse: L", "Materiale: Polyester", "Pris: 499 "] },
 
     "kjole19": { bilde: "../Bilder/hvit_og_oransje_kjoleF liten.jpg", tekst: ["Hvit og oransje kjole", "Størrelse: M", "Materiale: Bomull", "Pris: 2700"] },
 
-    "kjole20": { bilde: "../Bilder/Hvit_og_svart_spiral_kjoleF liten.jpg", tekst: ["Hvit og svart spiral kjole", "Størrelse: S", "Materiale: Lin", "Pris: 3100"] },
+    "kjole20": { bilde: "../Bilder/Hvit_og_svart_spiral_kjoleF liten.jpg", tekst: ["Hvit og svart spiral kjole", "Størrelse: S", "Materiale: Lin", "Pris: 499"] },
 
-    "kjole21": { bilde: "../Bilder/Hvit_og_svart_trekant_kjoleF liten.jpg", tekst: ["Hvit og svart trekant kjole", "Størrelse: M", "Materiale: Bomull", "Pris: 2850"] },
+    "kjole21": { bilde: "../Bilder/Hvit_og_svart_trekant_kjoleF liten.jpg", tekst: ["Hvit og svart trekant kjole", "Størrelse: M", "Materiale: Bomull", "Pris: 499"] },
 
-    "kjole22": { bilde: "../Bilder/hvit_blomst_kjoleF liten.jpg", tekst: ["Hvit blomstret kjole", "Størrelse: L", "Materiale: Silke", "Pris: 3250"] },
+    "kjole22": { bilde: "../Bilder/hvit_blomst_kjoleF liten.jpg", tekst: ["Hvit blomstret kjole", "Størrelse: L", "Materiale: Silke", "Pris: 599"] },
 
     "kjole23": { bilde: "../Bilder/Lang_Kjole_BloF liten.jpg", tekst: ["Lang blå kjole", "Størrelse: M", "Materiale: Ull", "Pris: 4100"] },
 
@@ -57,7 +57,7 @@ const produktBilder = {
 
     "kjole25": { bilde: "../Bilder/Lang_Kjole_RosaF liten.jpg", tekst: ["Lang rosa kjole", "Størrelse: M", "Materiale: Silke", "Pris: 3500"] },
 
-    "kjole26": { bilde: "../Bilder/rod_blomster_kjoleF liten.jpg", tekst: ["Rød blomsterkjole", "Størrelse: L", "Materiale: Bomull", "Pris: 2699"] },
+    "kjole26": { bilde: "../Bilder/rod_blomster_kjoleF liten.jpg", tekst: ["Rød blomsterkjole", "Størrelse: L", "Materiale: Bomull", "Pris: 299"] },
    
     "kjole27": { bilde: "../Bilder/Rod_kjort liten.jpg", tekst: ["Rød kjortel", "Størrelse: S", "Materiale: Lin", "Pris: 2400"] },
    
@@ -67,9 +67,9 @@ const produktBilder = {
     
     "kjole30": { bilde: "../Bilder/Svart_kjoleF liten.jpg", tekst: ["Svart kjole", "Størrelse: S", "Materiale: Polyester", "Pris: 2599"] },
     
-    "kjole31": { bilde: "../Bilder/Svart kjole_kjort liten.jpg", tekst: ["Svart kjortel", "Størrelse: M", "Materiale: Lin", "Pris: 2800"] },
+    "kjole31": { bilde: "../Bilder/Svart kjole_kjort liten.jpg", tekst: ["Svart kjortel", "Størrelse: M", "Materiale: Lin", "Pris: 2800"] }, //ikke lenger//
     
-    "kjole32": { bilde: "../Bilder/Svart_blomster_kjoleF liten.jpg", tekst: ["Svart blomsterkjole", "Størrelse: L", "Materiale: Bomull", "Pris: 3150"] }
+    "kjole32": { bilde: "../Bilder/Svart_blomster_kjoleF liten.jpg", tekst: ["Svart blomsterkjole", "Størrelse: L", "Materiale: Bomull", "Pris: 299"] }
 };
 
 function beregnTotalPris() {
