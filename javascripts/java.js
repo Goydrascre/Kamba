@@ -50,9 +50,6 @@ counterButton.addEventListener("click", function () {
 // --- Modal og bildevisning ---
 
 // Velg elementene for modal
-// --- Modal og bildevisning ---
-
-// Velg elementene for modal
 const thumbnails = document.querySelectorAll('.thumbnail');
 const modal = document.getElementById('imageModal');
 const modalImage = document.getElementById('modalImage');
@@ -100,140 +97,110 @@ modalImage.addEventListener("click", function (event) {
 });
 
 
-// --- Oppdatering av produktbilder basert på produkt-ID ---
+// --- Oppdatering av produktbilder og pris basert på produkt-ID ---
 
 // Referanser til bildeelementene
 const hovedbilde = document.getElementById('hovedbilde');
 const bilde1 = document.getElementById('bilde1');
 const bilde2 = document.getElementById('bilde2');
+const prisElement = document.getElementById('info');  // Her vises prisen
 
-// Oppdater bilder basert på produktId
-if (produktId === 'kjole1') {
-    hovedbilde.src = '../Bilder/Svart_og_hvit_kjoleF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole1_back.jpg';
-} else if (produktId === 'kjole2') {
-    hovedbilde.src = '../Bilder/svart_og_solv_kjoleF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole2_back.jpg';
-} else if (produktId === 'kjole3') {
-    hovedbilde.src = '../Bilder/Svart_og_solv_lang_kjoleF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole3_back.jpg';
-} else if (produktId === 'kjole4') {
-    hovedbilde.src = '../Bilder/Lang_blomst_kjole_rodF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole4_back.jpg';
-} else if (produktId === 'kjole5') {
-    hovedbilde.src = '../Bilder/Lang_blomst_kjole_gronnF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole5_back.jpg';
-} else if (produktId === 'kjole6') {
-    hovedbilde.src = '../Bilder/Blo_og_solv_kjoleF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole6_back.jpg';
-} else if (produktId === 'kjole7') {
-    hovedbilde.src = '../Bilder/Rod_frakk.jpg';
-    bilde2.src = '../Bilder/kjole7_back.jpg';
-} else if (produktId === 'kjole8') {
-    hovedbilde.src = '../Bilder/Leopard_kjoleF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole8_back.jpg';
-} else if (produktId === 'kjole9') {
-    hovedbilde.src = '../Bilder/Leopard_kjole_langF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole9_back.jpg';
-} else if (produktId === 'kjole10') {
-    hovedbilde.src = '../Bilder/Gull_kjoleF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole10_back.jpg';
-} else if (produktId === 'kjole11') {
-    hovedbilde.src = '../Bilder/Blo_kjole_kortF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole11_back.jpg';
-} else if (produktId === 'kjole12') {
-    hovedbilde.src = '../Bilder/Fiske_kjoleF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole12_back.jpg';
-} else if (produktId === 'kjole13') {
-    hovedbilde.src = '../Bilder/Fugl_kjortF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole13_back.jpg';
-} else if (produktId === 'kjole14') {
-    hovedbilde.src = '../Bilder/Gronn_blomst_kjoleF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole14_back.jpg';
-} else if (produktId === 'kjole15') {
-    hovedbilde.src = '../Bilder/Gul_kjort.jpg';
-    bilde2.src = '../Bilder/kjole15_back.jpg';
-} else if (produktId === 'kjole16') {
-    hovedbilde.src = '../Bilder/hvit_blomster_kjole_kortF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole16_back.jpg';
-} else if (produktId === 'kjole17') {
-    hovedbilde.src = '../Bilder/hvit_sølv_kjoleF.jpg';
-    bilde2.src = '../Bilder/kjole17_back.jpg';
-} else if (produktId === 'kjole18') {
-    hovedbilde.src = '../Bilder/Hvit_monster_kjoleF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole18_back.jpg';
-} else if (produktId === 'kjole19') {
-    hovedbilde.src = '../Bilder/hvit_og_oransje_kjoleF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole19_back.jpg';
-} else if (produktId === 'kjole20') {
-    hovedbilde.src = '../Bilder/Hvit_og_svart_spiral_kjoleF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole20_back.jpg';
-} else if (produktId === 'kjole21') {
-    hovedbilde.src = '../Bilder/Hvit_og_svart_trekant_kjoleF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole21_back.jpg';
-} else if (produktId === 'kjole22') {
-    hovedbilde.src = '../Bilder/hvit_blomst_kjoleF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole22_back.jpg';
-} else if (produktId === 'kjole23') {
-    hovedbilde.src = '../Bilder/Lang_Kjole_BloF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole23_back.jpg';
-} else if (produktId === 'kjole24') {
-    hovedbilde.src = '../Bilder/Lang_Kjole_RodF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole24_back.jpg';
-} else if (produktId === 'kjole25') {
-    hovedbilde.src = '../Bilder/Lang_Kjole_RosaF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole25_back.jpg';
-} else if (produktId === 'kjole26') {
-    hovedbilde.src = '../Bilder/rod_blomster_kjoleF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole26_back.jpg';
-} else if (produktId === 'kjole27') {
-    hovedbilde.src = '../Bilder/Rod_kjort.jpg';
-    bilde2.src = '../Bilder/kjole27_back.jpg';
-} else if (produktId === 'kjole28') {
-    hovedbilde.src = '../Bilder/Rosa_kjoleF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole28_back.jpg';
-} else if (produktId === 'kjole29') {
-    hovedbilde.src = '../Bilder/Solv_kjole_langF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole29_back.jpg';
-} else if (produktId === 'kjole30') {
-    hovedbilde.src = '../Bilder/Svart_kjoleF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole30_back.jpg';
-} else if (produktId === 'kjole31') {
-    hovedbilde.src = '../Bilder/Svart_kjole_kjortF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole31_back.jpg';
-} else if (produktId === 'kjole32') {
-    hovedbilde.src = '../Bilder/Svart_blomster_kjoleF.jpg';
-    bilde1.src = hovedbilde.src.replace('F.jpg', 'B.jpg');
-    bilde2.src = '../Bilder/kjole32_back.jpg';
+// Objekter med bilder og priser
+const kjoleBilder = {
+    kjole1: 'Svart_og_hvit_kjoleF.jpg',
+    kjole2: 'svart_og_solv_kjoleF.jpg',
+    kjole3: 'Svart_og_solv_lang_kjoleF.jpg',
+    kjole4: 'Lang_blomst_kjole_rodF.jpg',
+    kjole5: 'Lang_blomst_kjole_gronnF.jpg',
+    kjole6: 'Blo_og_solv_kjoleF.jpg',
+    kjole7: 'Rod_frakk.jpg',
+    kjole8: 'Leopard_kjoleF.jpg',
+    kjole9: 'Leopard_kjole_langF.jpg',
+    kjole10: 'Gull_kjoleF.jpg',
+    kjole11: 'Blo_kjole_kortF.jpg',
+    kjole12: 'Fiske_kjoleF.jpg',
+    kjole13: 'Fugl_kjortF.jpg',
+    kjole14: 'Gronn_blomst_kjoleF.jpg',
+    kjole15: 'Gul_kjort.jpg',
+    kjole16: 'hvit_blomster_kjole_kortF.jpg',
+    kjole17: 'hvit_sølv_kjoleF.jpg',
+    kjole18: 'Hvit_monster_kjoleF.jpg',
+    kjole19: 'hvit_og_oransje_kjoleF.jpg',
+    kjole20: 'Hvit_og_svart_spiral_kjoleF.jpg',
+    kjole21: 'Hvit_og_svart_trekant_kjoleF.jpg',
+    kjole22: 'hvit_blomst_kjoleF.jpg',
+    kjole23: 'Lang_Kjole_BloF.jpg',
+    kjole24: 'Lang_Kjole_RodF.jpg',
+    kjole25: 'Lang_Kjole_RosaF.jpg',
+    kjole26: 'rod_blomster_kjoleF.jpg',
+    kjole27: 'Rod_kjort.jpg',
+    kjole28: 'Rosa_kjoleF.jpg',
+    kjole29: 'Solv_kjole_langF.jpg',
+    kjole30: 'Svart_kjoleF.jpg',
+    kjole31: 'Svart_kjole_kjortF.jpg',
+    kjole32: 'Svart_blomster_kjoleF.jpg'
+};
+
+const kjolePriser = {
+    kjole1: 4483,
+    kjole2: 899,
+    kjole3: 799,
+    kjole4: 299,
+    kjole5: 299,
+    kjole6: 799,
+    kjole7: 4999,
+    kjole8: 2599,
+    kjole9: 2875,
+    kjole10: 5290,
+    kjole11: 2100,
+    kjole12: 1899,
+    kjole13: 1299,
+    kjole14: 299,
+    kjole15: 2800,
+    kjole16: 2499,
+    kjole17: 499,
+    kjole18: 499,
+    kjole19: 2700,
+    kjole20: 499,
+    kjole21: 499,
+    kjole22: 599,
+    kjole23: 849,
+    kjole24: 1299,
+    kjole25: 799,
+    kjole26: 299,
+    kjole27: 2400,
+    kjole28: 599,
+    kjole29: 4700,
+    kjole30: 2599,
+    kjole31: 2800,
+    kjole32: 299
+};
+
+
+if (produktId) {
+    const basePath = '../Bilder/';
+    const hovedFil = kjoleBilder[produktId];
+    const backPath = produktId + '_back.jpg';
+
+    if (hovedFil) {
+        hovedbilde.src = basePath + hovedFil;
+
+        // Hvis navnet ender på 'F.jpg', kan vi automatisk lage B-versjonen
+        if (hovedFil.includes('F.jpg')) {
+            bilde1.src = basePath + hovedFil.replace('F.jpg', 'B.jpg');
+        } else {
+            bilde1.src = '';  // eller en placeholder hvis ønskelig
+        }
+    }
+
+    // Oppdater pris i elementet med id="info"
+    const pris = kjolePriser[produktId];
+    if (pris) {
+        prisElement.textContent = `Pris: ${pris} kr`;
+    } else {
+        prisElement.textContent = 'Pris ikke tilgjengelig';
+    }
 }
-
 
 
 // --- Andre funksjoner, for eksempel reset med Shift+R og scroll-knapp ---
@@ -266,4 +233,4 @@ function toggleButtonPosition() {
         button.style.bottom = '20px';  // Sett tilbake til bunnens posisjon
     }
 }
-
+console.log(prisElement);
